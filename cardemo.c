@@ -38,6 +38,16 @@ void display(void)
    glEnd();
     glRectf(-11.0, -16.0, -9.0, -8.0);
     glRectf(9.0, -16.0, 11.0, -8.0);
+    glRectf(-7.0, -14.0, -5.0, -12.0);
+    glRectf(5.0, -14.0, 7.0, -12.0);
+   glBegin(GL_POINTS);
+        glVertex2f(-7,-15);
+        glVertex2f(-5,-15);
+        glVertex2f(-8,-16);
+        glVertex2f(-4,-16);
+        glVertex2f(-6,-16);
+        glVertex2f(-6,-17);
+   glEnd(); 
    glPopMatrix();
    glutSwapBuffers();
 }
@@ -63,7 +73,7 @@ void reshape(int w, int h)
 {
    glutInit(&argc, argv);
    glutInitDisplayMode (GLUT_DOUBLE | GLUT_RGB);
-   glutInitWindowSize (250, 250); 
+   glutInitWindowSize (300, 300); 
    glutInitWindowPosition (100, 100);
    glutCreateWindow (argv[0]);
    init ();
