@@ -15,38 +15,47 @@ void display(void)
 {
    glClear(GL_COLOR_BUFFER_BIT);
    glPushMatrix();
+   
    glColor3f(0.34, 1.0, 1.0);
-   glRectf(2.0, 10.0, -2.0, -10.0);
-   glRectf(-8.0, 12.0, 8.0, 13.0);
-   glRectf(-10.0, 9.0, -8.0, 15.0);
-   glRectf(8.0, 9.0, 10.0, 15.0);
-   glBegin(GL_LINES);
-	glVertex2f(8.0,11.0);
-	glVertex2f(6.0,7.0);
-	glVertex2f(6.0,7.0);
-	glVertex2f(6.0,-7.0);
-	glVertex2f(6.0,-7.0);
-	glVertex2f(10.0,-12.0);
-	glVertex2f(-8.0,11.0);
-	glVertex2f(-6.0,7.0);
-	glVertex2f(-6.0,7.0);
-	glVertex2f(-6.0,-7.0);
-	glVertex2f(-6.0,-7.0);
-	glVertex2f(-10.0,-12.0);
-	glVertex2f(10.0,-12.0);
-	glVertex2f(-10.0,-12.0);
+   glRectf(-4.0, 6.0, 4.0, 6.5);
+   glRectf(-5.0, 4.5, -4.0, 7.5);
+   glRectf(4.0, 4.5, 5.0, 7.5);
+   glColor3f(0.34, 0.0, 1.0);
+   glBegin(GL_POLYGON);
+	glVertex2f(-3.0,3.5);
+	glVertex2f(-4.0, 6.0);
+	glVertex2f(4.0, 6.0);
+        glVertex2f(3.0,3.5);
    glEnd();
-    glRectf(-11.0, -16.0, -9.0, -8.0);
-    glRectf(9.0, -16.0, 11.0, -8.0);
-    glRectf(-7.0, -14.0, -5.0, -12.0);
-    glRectf(5.0, -14.0, 7.0, -12.0);
+
+  glBegin(GL_POLYGON);
+	glVertex2f(-4.5, -6.0);
+	glVertex2f(-3.0,-3.5);
+	glVertex2f(3.0,-3.5);
+	glVertex2f(4.5, -6.0);
+   glEnd();
+  glBegin(GL_POLYGON);
+	glVertex2f(-3.0,-3.5);
+	glVertex2f(-3.0,3.5);
+	glVertex2f(3.0,3.5);
+	glVertex2f(3.0,-3.5);
+  glEnd();
+
+   
+    
+    glColor3f(0.34, 1.0, 1.0);
+    glRectf(1.0, 5.0, -1.0, -5.0);
+    glRectf(-5.5, -8.0, -4.5, -4.0);
+    glRectf(4.5, -8.0, 5.5, -4.0);
+    glRectf(-3.5, -7.0, -2.5, -6.0);
+    glRectf(2.5, -7.0, 3.5, -6.0);
    glBegin(GL_POINTS);
-        glVertex2f(-7,-15);
-        glVertex2f(-5,-15);
-        glVertex2f(-8,-16);
-        glVertex2f(-4,-16);
-        glVertex2f(-6,-16);
-        glVertex2f(-6,-17);
+        glVertex2f(-3.5,-7.5);
+        glVertex2f(-3.5,-7.5);
+        glVertex2f(-4,-8);
+        glVertex2f(-2,-8);
+        glVertex2f(-3,-8);
+        glVertex2f(-3,-8.5);
    glEnd(); 
    glPopMatrix();
    glutSwapBuffers();
