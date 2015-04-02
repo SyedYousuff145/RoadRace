@@ -57,6 +57,15 @@ void display(void)
         glVertex2f(-3,-8);
         glVertex2f(-3,-8.5);
    glEnd(); 
+
+ glBegin(GL_POINTS);
+        glVertex2f(3.5,-7.5);
+        glVertex2f(3.5,-7.5);
+        glVertex2f(4,-8);
+        glVertex2f(2,-8);
+        glVertex2f(3,-8);
+        glVertex2f(3,-8.5);
+   glEnd(); 
    glPopMatrix();
    glutSwapBuffers();
 }
